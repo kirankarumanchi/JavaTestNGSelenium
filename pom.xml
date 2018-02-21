@@ -71,6 +71,11 @@
       <artifactId>selenium-safari-driver</artifactId>
       <version>3.9.1</version>
     </dependency>
+    <dependency>
+      <groupId>xml-apis</groupId>
+      <artifactId>xml-apis</artifactId>
+      <version>1.4.01</version>
+    </dependency>
   </dependencies>
   <build>
     <resources>
@@ -79,6 +84,7 @@
         <filtering>true</filtering>
       </resource>
     </resources>
+<!--
     <testResources>
       <testResource>
         <directory>src/test/resources</directory>
@@ -115,6 +121,7 @@
         </configuration>
       </plugin>
     </plugins>
+-->
   </build>
   <!-- profiles -->
   <profiles>

@@ -1,3 +1,11 @@
+# Day 0 Learnings
+Once the  AWS is restarted, no need to change the private or public keys
+Just change the following:
+- In Slave node, just put the slave URL
+- In Git and Github plugins, just change the Jenkins new URL
+- For GitHub plugin need to always ensure to add the URL with this: /github-webhook/
+- Test the service just to get the build automatically triggered 
+
 # Day 1 Learnings
 - Created a Maven Project from artifactory
 - It created a project in my C:\
@@ -13,5 +21,6 @@
 - git remote add kkk https://github.com/kirankarumanchi/JavaTestNGSelenium
 - git commit
 - git push
+
 
 

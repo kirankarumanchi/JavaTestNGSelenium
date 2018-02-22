@@ -46,3 +46,8 @@ Just change the following:
 
 
 
+     post {
+        always {
+            archive 'target/*.jar'
+        }
+     }

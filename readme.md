@@ -21,6 +21,15 @@ Just change the following:
 - git remote add kkk https://github.com/kirankarumanchi/JavaTestNGSelenium
 - git commit
 - git push
+- Removed the TestNG files for Jenkins Pipeline
+- Added the manifest related information and log4j in Pom.xml
+- mvn clean
+- mvn package
+- java -jar ../XXXX.jar N1 N2
+
+
+ # Day 2 Learnings
+ - 
 
 
 

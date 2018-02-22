@@ -34,7 +34,15 @@ Just change the following:
     - sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
     - sudo yum install -y apache-maven
     - mvn –version
- - 
+ - Ensure to install the Java JDK latest version and associated alternatives
+ - Alternatives are like aliases
+ - The commands being used are as follows:
+    - yum search openjdk devel
+    - sudo yum install java-1.8.0-openjdk-devel.x86_64
+    - sudo alternatives --config javac
+- DO NOT PLACE SPACES in PROJECT NAMES IN JENKINS. Linux doesn't like them well
+- 
+
 
 
 

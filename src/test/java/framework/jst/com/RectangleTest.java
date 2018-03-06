@@ -1,4 +1,4 @@
-package framework.jst.com.pages;
+package framework.jst.com;
 
 import framework.jst.com.Rectangle;
 import org.junit.Test;

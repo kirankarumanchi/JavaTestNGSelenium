@@ -65,7 +65,7 @@ pipeline {
             steps{
                 echo 'Downloading and running in docker environment'
                 sh "wget http://13.210.209.29/rectangles/all/Java-TestNG-Selenium-1.0-SNAPSHOT.jar"
-                sh "java -jar /var/www/html/rectangles/all/Java-TestNG-Selenium-1.0-SNAPSHOT.jar 3 4"
+                sh "java -jar Java-TestNG-Selenium-1.0-SNAPSHOT.jar 3 4"
             }
         }
      }

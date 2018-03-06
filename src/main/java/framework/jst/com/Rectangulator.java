@@ -8,7 +8,7 @@ public class Rectangulator {
 
         Rectangle myRectangle = new Rectangle(length,width);
 
-        System.out.println("Length is : " + length + "Width is : " + width);
+        System.out.println("Length is : " + length + " && Width is : " + width);
         System.out.println("Area is : " + myRectangle.getArea());
         System.out.println("Perimeter is : " + myRectangle.getPerimeter());
     }

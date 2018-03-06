@@ -20,6 +20,13 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+                sh 'cp target/Java-TestNG-Selenium-1.0-SNAPSHOT.jar /var/www/html/rectangles/all'
+            }
+        }
      }
 
      post {

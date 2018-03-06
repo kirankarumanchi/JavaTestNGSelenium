@@ -6,6 +6,14 @@ pipeline {
     }
 
     stages {
+
+        stage('Unit Tests') {
+            steps {
+                echo 'Unit testing....'
+                sh 'mvn clean package'
+            }
+        }
+
         stage('Build') {
             steps {
                 echo 'Building....'

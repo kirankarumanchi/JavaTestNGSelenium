@@ -42,12 +42,13 @@ Just change the following:
     - sudo alternatives --config javac
 - DO NOT PLACE SPACES in PROJECT NAMES IN JENKINS. Linux doesn't like them well
 - 
-
-
-
-
      post {
         always {
             archive 'target/*.jar'
         }
      }
+     
+# Day 3 Learnings
+- Added a junit class files
+- Deployment to Dev environment
+- 

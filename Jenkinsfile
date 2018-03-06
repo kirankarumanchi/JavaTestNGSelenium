@@ -59,7 +59,7 @@ pipeline {
 
         stage('Test on Debian'){
             agent {
-                docker 'oracle/openjdk:8'
+                docker 'oracle/openjdk'
             }
 
             steps{

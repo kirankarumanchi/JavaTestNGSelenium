@@ -27,6 +27,12 @@ pipeline {
                 echo 'Building....'
                 sh 'mvn clean package'
             }
+
+            post {
+               success {
+                   archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
+               }
+            }
         }
 
         stage('Deploy') {
@@ -51,10 +57,4 @@ pipeline {
             }
         }
      }
-
-     post {
-         always {
-             archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
-         }
-      }
 }

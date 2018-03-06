@@ -7,9 +7,10 @@
   <packaging>jar</packaging>
   <dependencies>
     <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>6.8</version>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>6.9.8</version>
+        <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>ru.stqa.selenium</groupId>
@@ -149,7 +150,7 @@
           <systemPropertyVariables>
             <application.properties>src/test/resources/application.properties</application.properties>
           </systemPropertyVariables>
-        </configuration>-->
+        </configuration> -->
       </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>

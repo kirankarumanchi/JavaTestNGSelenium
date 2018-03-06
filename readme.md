@@ -51,4 +51,9 @@ Just change the following:
 # Day 3 Learnings
 - Added a junit class files
 - Deployment to Dev environment
-- 
+- Used test frameworks by reading the https://maven.apache.org/surefire/maven-surefire-plugin/usage.html
+- There are basically 3 test frameworks being used by developers. For each of them the surefire plugin usage is different
+-- Junit
+-- TestNG
+-- POJO
+     

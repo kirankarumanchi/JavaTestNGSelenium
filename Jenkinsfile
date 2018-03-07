@@ -47,7 +47,7 @@ pipeline {
 
         stage('Running on CentOS'){
             agent {
-                label 'centOS'
+                label 'apache'
             }
 
             steps {

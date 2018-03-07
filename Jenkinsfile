@@ -68,5 +68,11 @@ pipeline {
                 sh "java -jar Java-TestNG-Selenium-1.0-SNAPSHOT.jar 3 4"
             }
         }
+
+        stage('Promote to Green'){
+            steps {
+                sh "cp /var/www/html/rectangles/all/Java-TestNG-Selenium-1.0-SNAPSHOT.jar /var/www/html/rectangles/green/Java-TestNG-Selenium-1.0-SNAPSHOT.jar"
+            }
+        }
      }
 }

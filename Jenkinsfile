@@ -52,7 +52,7 @@ pipeline {
 
             steps {
                 echo 'Downloading and running in different environment'
-                sh "wget http://52.65.85.163:8080/rectangles/all/Java-TestNG-Selenium-1.0-SNAPSHOT.jar"
+                sh "wget http://52.65.85.163/rectangles/all/Java-TestNG-Selenium-1.0-SNAPSHOT.jar"
                 sh "java -jar /var/www/html/rectangles/all/Java-TestNG-Selenium-1.0-SNAPSHOT.jar 3 4"
             }
         }
@@ -64,7 +64,7 @@ pipeline {
 
             steps{
                 echo 'Downloading and running in docker environment'
-                sh "wget http://52.65.85.163:8080/rectangles/all/Java-TestNG-Selenium-1.0-SNAPSHOT.jar"
+                sh "wget http://52.65.85.163/rectangles/all/Java-TestNG-Selenium-1.0-SNAPSHOT.jar"
                 sh "java -jar Java-TestNG-Selenium-1.0-SNAPSHOT.jar 3 4"
             }
         }

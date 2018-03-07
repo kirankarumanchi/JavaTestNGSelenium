@@ -70,6 +70,9 @@ pipeline {
         }
 
         stage('Promote to Green'){
+            agent {
+                label 'apache'
+            }
             steps {
                 sh "cp /var/www/html/rectangles/all/Java-TestNG-Selenium-1.0-SNAPSHOT.jar /var/www/html/rectangles/green/Java-TestNG-Selenium-1.0-SNAPSHOT.jar"
             }

@@ -47,7 +47,7 @@ pipeline {
 
         stage('Running on CentOS'){
             agent {
-                label 'apache'
+                label 'centOS'
             }
 
             steps {
@@ -59,7 +59,7 @@ pipeline {
 
         stage('Test on Debian'){
             agent {
-                docker 'openjdk:8-jre'
+                docker 'openjdk:latest'
             }
 
             steps{
